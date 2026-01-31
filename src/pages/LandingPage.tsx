@@ -215,9 +215,9 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="min-h-screen overflow-x-hidden" style={{ background: 'linear-gradient(135deg, hsl(220 20% 95%) 0%, hsl(35 30% 95%) 50%, hsl(220 15% 96%) 100%)' }}>
+    <div className="min-h-screen overflow-x-hidden" style={{ background: 'linear-gradient(160deg, hsl(220 30% 96%) 0%, hsl(38 35% 96%) 20%, hsl(200 30% 95%) 45%, hsl(270 25% 96%) 70%, hsl(220 25% 95%) 100%)' }}>
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center pt-24 md:pt-32" style={{ background: 'linear-gradient(135deg, hsl(220 30% 15%) 0%, hsl(220 25% 22%) 40%, hsl(35 40% 25%) 100%)' }}>
+      <section id="home" className="relative min-h-screen flex items-center pt-24 md:pt-32" style={{ background: 'linear-gradient(135deg, hsl(220 35% 12%) 0%, hsl(215 30% 18%) 30%, hsl(35 50% 20%) 70%, hsl(25 45% 18%) 100%)' }}>
         <div className="absolute inset-0 opacity-30">
           <img src={heroImage} alt="IT Services" className="w-full h-full object-cover" />
         </div>

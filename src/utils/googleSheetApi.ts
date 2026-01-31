@@ -1,7 +1,7 @@
 // Google Sheets API Integration
 // Sends form data to Google Apps Script Web App
 
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxucPtwYVDRkj7ksuCet4XEbP8KLqn-7G9f1vRVdcwCosQ0z3m9ffOZ7xUixW6miOW1/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwTCtGHDIfTexhX2Z-Cf_MNhPFUNU4o_c1XjIsWx-adCGAnAlIYFHxGpBaziwjFztpH/exec';
 
 export interface ContactFormData {
   name: string;

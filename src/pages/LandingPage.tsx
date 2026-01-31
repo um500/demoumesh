@@ -578,10 +578,10 @@ const LandingPage = () => {
               </p>
               <div className="flex gap-2 md:gap-3">
                 {[Facebook, Instagram, Linkedin, Twitter].map((Icon, i) => (
-                  <a key={i} href="#" className="w-8 h-8 md:w-9 md:h-9 rounded-md bg-background/10 flex items-center justify-center text-background/70 hover:bg-primary hover:text-primary-foreground transition-colors">
+                  <span key={i} className="w-8 h-8 md:w-9 md:h-9 rounded-md bg-background/10 flex items-center justify-center text-background/70 hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer">
                     <Icon size={14} className="md:hidden" />
                     <Icon size={16} className="hidden md:block" />
-                  </a>
+                  </span>
                 ))}
               </div>
             </div>

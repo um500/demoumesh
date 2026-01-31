@@ -68,13 +68,41 @@ const featuredServices = [
 
 // All Services
 const services = [
-  { icon: Globe, title: 'Web Development', description: 'Custom websites & web applications' },
-  { icon: TrendingUp, title: 'Digital Marketing', description: 'Ads, funnels & lead generation' },
-  { icon: Search, title: 'SEO Services', description: 'On-page, local & technical SEO' },
-  { icon: Palette, title: 'Branding', description: 'Logo, identity & creative design' },
-  { icon: Video, title: 'Video Production', description: 'Promos, reels & AI videos' },
-  { icon: Server, title: 'IT Support', description: 'Maintenance & cloud services' },
-  { icon: Shield, title: 'CCTV & Security', description: 'Surveillance & smart security' },
+  { 
+    icon: Globe, 
+    title: 'Web Development', 
+    description: 'Build stunning, responsive websites and powerful web applications that drive results. From landing pages to complex portals, we create digital experiences that convert visitors into customers.'
+  },
+  { 
+    icon: TrendingUp, 
+    title: 'Digital Marketing', 
+    description: 'Grow your business with targeted advertising campaigns on Google, Facebook, and Instagram. We create high-converting funnels that generate quality leads and maximize your ROI.'
+  },
+  { 
+    icon: Search, 
+    title: 'SEO Services', 
+    description: 'Dominate search rankings with our comprehensive SEO strategies. We optimize your website for on-page, off-page, and technical SEO to drive organic traffic and increase visibility.'
+  },
+  { 
+    icon: Palette, 
+    title: 'Branding & Design', 
+    description: 'Create a memorable brand identity that stands out. From logo design to complete brand guidelines, we craft visual identities that resonate with your target audience.'
+  },
+  { 
+    icon: Video, 
+    title: 'Video Production', 
+    description: 'Engage your audience with professional video content. We produce promotional videos, social media reels, explainer videos, and AI-powered content that tells your story.'
+  },
+  { 
+    icon: Server, 
+    title: 'IT Support & Cloud', 
+    description: 'Keep your business running smoothly with 24/7 IT support and cloud solutions. We handle server management, data backup, and infrastructure to ensure maximum uptime.'
+  },
+  { 
+    icon: Shield, 
+    title: 'CCTV & Security', 
+    description: 'Protect your premises with advanced surveillance systems. We install and maintain CCTV cameras, access control, and smart security solutions for complete peace of mind.'
+  },
 ];
 
 // Stats

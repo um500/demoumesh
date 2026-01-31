@@ -380,7 +380,7 @@ const LandingPage = () => {
       </section>
 
       {/* All Services Grid */}
-      <section id="services" className="section bg-secondary/20">
+      <section id="services" className="section bg-secondary/30">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -388,15 +388,15 @@ const LandingPage = () => {
             viewport={{ once: true }}
             className="text-center mb-10 md:mb-14"
           >
-            <p className="text-primary font-medium mb-2 md:mb-3 text-sm md:text-base">Our Services</p>
-            <h2 className="section-title">Complete IT Solutions</h2>
-            <p className="section-subtitle mx-auto mt-3 md:mt-4 text-sm md:text-base">
+            <p className="text-primary font-semibold mb-2 md:mb-3 text-sm md:text-base uppercase tracking-wider">Our Services</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground italic">Complete IT Solutions</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto mt-4 md:mt-5 text-sm md:text-base leading-relaxed">
               We offer a wide range of professional IT services tailored to meet your business needs. 
               From development to marketing, we've got you covered.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
             {services.map((service, i) => (
               <motion.div
                 key={service.title}
@@ -404,17 +404,17 @@ const LandingPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
-                className="rounded-xl p-4 md:p-6 shadow-lg border hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer"
+                className="rounded-xl p-5 md:p-6 shadow-lg border hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer"
                 style={{ 
                   background: 'linear-gradient(145deg, hsl(192 30% 24%) 0%, hsl(192 25% 20%) 100%)',
                   borderColor: 'hsl(192 20% 32%)'
                 }}
               >
-                <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-all duration-300" style={{ background: 'linear-gradient(135deg, hsl(25 85% 55%) 0%, hsl(20 80% 50%) 100%)' }}>
-                  <service.icon className="w-5 h-5 md:w-7 md:h-7 text-white" />
+                <div className="w-11 h-11 md:w-14 md:h-14 rounded-lg flex items-center justify-center mb-4 md:mb-5 group-hover:scale-110 transition-all duration-300" style={{ background: 'linear-gradient(135deg, hsl(25 85% 55%) 0%, hsl(20 80% 50%) 100%)' }}>
+                  <service.icon className="w-5 h-5 md:w-7 md:h-7 text-white" strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-sm md:text-lg mb-1 md:mb-2 group-hover:text-primary transition-colors text-foreground">{service.title}</h3>
-                <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{service.description}</p>
+                <h3 className="font-display font-bold text-base md:text-xl mb-2 md:mb-3 group-hover:text-primary transition-colors text-foreground">{service.title}</h3>
+                <p className="text-xs md:text-sm text-muted-foreground leading-relaxed font-light">{service.description}</p>
               </motion.div>
             ))}
           </div>

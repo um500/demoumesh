@@ -56,7 +56,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        display: ['Space Grotesk', 'sans-serif'],
+        display: ['Playfair Display', 'serif'],
       },
       keyframes: {
         "accordion-down": {

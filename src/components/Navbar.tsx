@@ -67,9 +67,9 @@ const Navbar = () => {
           </div>
           <div className="flex items-center gap-3">
             {[Facebook, Instagram, Linkedin, Twitter].map((Icon, i) => (
-              <a key={i} href="#" className="hover:text-primary transition-colors">
+              <span key={i} className="hover:text-primary transition-colors cursor-pointer">
                 <Icon size={14} />
-              </a>
+              </span>
             ))}
           </div>
         </div>

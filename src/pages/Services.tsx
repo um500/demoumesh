@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Globe, TrendingUp, Search, Palette, Video, Settings, Shield } from 'lucide-react';
 
 // Import service images
@@ -92,9 +92,21 @@ const staggerContainer = {
    Services Page Component
 =================================== */
 const Services = () => {
+  const navigate = useNavigate();
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
+  const handleContactClick = () => {
+    navigate('/');
+    setTimeout(() => {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
 
   return (
     <div className="min-h-screen" style={{ background: 'hsl(192 25% 18%)' }}>
@@ -323,16 +335,16 @@ const Services = () => {
                 Let's discuss your project and find the perfect solution for your needs.
               </p>
               
-              <Link
-                to="/#contact"
-                className="inline-block px-8 py-4 rounded-lg font-semibold text-white transition-all duration-300 hover:brightness-110 hover:-translate-y-1"
+              <button
+                onClick={handleContactClick}
+                className="inline-block px-8 py-4 rounded-lg font-semibold text-white transition-all duration-300 hover:brightness-110 hover:-translate-y-1 cursor-pointer"
                 style={{ 
                   background: 'linear-gradient(135deg, hsl(25 85% 55%) 0%, hsl(20 80% 50%) 100%)',
                   boxShadow: '0 4px 20px hsl(25 85% 55% / 0.4)'
                 }}
               >
                 Get Free Consultation
-              </Link>
+              </button>
             </div>
           </motion.div>
         </div>

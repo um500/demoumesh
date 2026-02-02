@@ -6,7 +6,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 const navLinks = [
   { name: 'Home', href: '#home', route: '/' },
   { name: 'About', href: '/about', route: '/about', isPage: true },
-  { name: 'Services', href: '#services', route: '/' },
+  { name: 'Services', href: '/services', route: '/services', isPage: true },
   { name: 'Blog', href: '#blog', route: '/' },
   { name: 'Contact', href: '#contact', route: '/' },
 ];
